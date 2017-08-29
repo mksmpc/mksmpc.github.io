@@ -2,4 +2,4 @@
 
 Games List:
 ------
-1. [Battle Arena][Games/BattleArena/]
+1. [Battle Arena](Games/BattleArena/)
