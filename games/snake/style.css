@@ -1,0 +1,89 @@
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#canvas {
+
+    margin: 5px auto;
+    width: 100%;
+}
+
+
+.button {
+    border: none;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background-color: #d43;
+    font: bold 1.1em arial;
+    text-align: center;
+    margin: 5px auto;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.button:active {
+    position: relative;
+    bottom: -2px;
+    left: 2px;
+}
+
+#settingsForm {
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+}
+
+#settingsForm label {
+    text-align: left;
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+#settingsForm input {
+    display: inline-block;
+    width: 30%;
+}
+
+#saveSettingsButton {
+    background-color: #3c5;
+}
+
+#controlButtons {
+    position: relative;
+    width: auto;
+    /*height: 90px;*/
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+#controlButtons .button {
+    background-color: #48c;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 2em;
+    line-height: 60px;
+}
+
+#controlButtons .button:active {
+    background-color: #35a;
+    bottom: 0;
+    left: 0;
+}
