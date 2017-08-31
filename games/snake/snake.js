@@ -312,6 +312,10 @@ document.querySelector("#settingsButton").onclick = function(event) {
     settingsForm.classList.toggle("hidden");
 }
 
+function hideSettings () {
+    settingsForm.classList.add("hidden");
+}
+
 // Save button
 document.querySelector("#saveSettingsButton").onclick = function(event) {
     initialSpeed = settingsForm.elements.initialSpeed.value;
@@ -390,6 +394,7 @@ function updateGame() {
 function initializeGame() {
 
     clearInterval(gameInterval);
+    hideSettings();
 
     speed = 0;
     score = 0;
