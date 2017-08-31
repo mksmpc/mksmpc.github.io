@@ -327,11 +327,11 @@ document.querySelector("#saveSettingsButton").onclick = function(event) {
 var startButton = document.querySelector("#resetButton");
 var controlButtons = document.querySelector("#controlButtons");
 //Start(Reset) button
-startButton.ontouchend = function (event) {
+startButton.ontouchend = function(event) {
     controlButtons.classList.remove("hidden");
     startBtnToReset();
 }
-startButton.onclick = function (event) {
+startButton.onclick = function(event) {
     startBtnToReset();
 }
 
@@ -354,6 +354,20 @@ document.querySelector("#buttonLeft").ontouchstart = function(event) {
 }
 document.querySelector("#buttonRight").ontouchstart = function(event) {
     snake.setDirection("right");
+}
+
+var allButtons = document.body.querySelectorAll(".button");
+disableSelection(allButtons);
+
+
+function disableSelection(elements) {
+    elements.forEach(function() {
+        console.log(this);
+        this.onselectstart = function() {
+            return false;
+        };
+        this.unselectable = "on";
+    });
 }
 
 
