@@ -324,18 +324,35 @@ document.querySelector("#saveSettingsButton").onclick = function(event) {
     event.preventDefault();
 }
 
+var startButton = document.querySelector("#resetButton");
+var controlButtons = document.querySelector("#controlButtons");
+//Start(Reset) button
+startButton.ontouchend = function (event) {
+    controlButtons.classList.remove("hidden");
+    startBtnToReset();
+}
+startButton.onclick = function (event) {
+    startBtnToReset();
+}
+
+function startBtnToReset() {
+    startButton.classList.remove("start");
+    startButton.innerHTML = "Reset Game";
+    initializeGame();
+}
+
 
 // Control Buttons
-document.querySelector("#buttonUp").onpointerdown = function(event) {
+document.querySelector("#buttonUp").ontouchstart = function(event) {
     snake.setDirection("up");
 }
-document.querySelector("#buttonDown").onpointerdown = function(event) {
+document.querySelector("#buttonDown").ontouchstart = function(event) {
     snake.setDirection("down");
 }
-document.querySelector("#buttonLeft").onpointerdown = function(event) {
+document.querySelector("#buttonLeft").ontouchstart = function(event) {
     snake.setDirection("left");
 }
-document.querySelector("#buttonRight").onpointerdown = function(event) {
+document.querySelector("#buttonRight").ontouchstart = function(event) {
     snake.setDirection("right");
 }
 
@@ -367,5 +384,3 @@ function initializeGame() {
 
     updateGame();
 }
-
-initializeGame();
