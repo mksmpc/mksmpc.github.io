@@ -74,12 +74,13 @@ body {
 #controlButtons .button {
     background-color: #48c;
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
     padding: 0;
     font-size: 2em;
-    line-height: 60px;
+    line-height: 75px;
+    border-radius: 50%;
 }
 
 #controlButtons .button:active {
