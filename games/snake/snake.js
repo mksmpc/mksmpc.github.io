@@ -326,16 +326,16 @@ document.querySelector("#saveSettingsButton").onclick = function(event) {
 
 
 // Control Buttons
-document.querySelector("#buttonUp").onclick = function(event) {
+document.querySelector("#buttonUp").onmousedown = function(event) {
     snake.setDirection("up");
 }
-document.querySelector("#buttonDown").onclick = function(event) {
+document.querySelector("#buttonDown").onmousedown = function(event) {
     snake.setDirection("down");
 }
-document.querySelector("#buttonLeft").onclick = function(event) {
+document.querySelector("#buttonLeft").onmousedown = function(event) {
     snake.setDirection("left");
 }
-document.querySelector("#buttonRight").onclick = function(event) {
+document.querySelector("#buttonRight").onmousedown = function(event) {
     snake.setDirection("right");
 }
 
