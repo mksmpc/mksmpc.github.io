@@ -1,5 +1,3 @@
-# HTML5 Games
-
 Games List:
 ------
 1. [Battle Arena](games/battle-arena/)
