@@ -1,4 +1,11 @@
 Games List:
-------
-1. [Battle Arena](games/battle-arena/)
-2. [Snake](games/snake/)
+------ 
+
+1.[Snake](snake/)
+
+[![snake game](images/snake.png)](snake/)
+
+
+2.[Battle Arena](battle-arena/)
+
+[![battle Arena game](images/battle-arena.png)](battle-arena/)
