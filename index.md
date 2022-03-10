@@ -1,11 +1,11 @@
 Games List:
 ------ 
 
-1.[Snake](snake/)
+1. [Snake][snake]  
+[<img src="images/snake.png" width="400" alt="snake game">][snake]
 
-[![snake game](images/snake.png)](snake/)
+2. [Battle Arena (Work In Progress)][battle-arena]  
+[<img src="images/battle-arena.png" width="400" alt="battle Arena game">][battle-arena]
 
-
-2.[Battle Arena (Work In Progress)](battle-arena/)
-
-[![battle Arena game](images/battle-arena.png)](battle-arena/)
+[snake]: snake/
+[battle-arena]: battle-arena/
